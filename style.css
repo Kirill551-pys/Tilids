@@ -252,6 +252,16 @@ body {
   padding-left: 15px;
 }
 
+
+body.final .container {
+  align-items: flex-start;
+  padding-top: 120px; /* или больше, если нужно */
+}
+
+body.final .container {
+  height: 728px;
+}
+
 @media (max-width: 1024px) {
   .container {
     min-height: auto;
@@ -315,11 +325,28 @@ body {
   }
   .question-block h2 {
     line-height: 22px;
-    width: 100%;
+    width: 100vw;
     text-align: center;
   }
 
   .answer-btn {
     max-height: 53px;
   }
+
+  .thank-you-message {
+    border-top: 5px solid #FFFFFF;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    max-width: 768px;
+  }
+
+  .message-heading {
+    display: none;
+  }
+
+  .message-text {
+    max-width: 335px;
+  }
+  
 }

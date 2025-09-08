@@ -42,19 +42,29 @@ function updateQuestion() {
         currentStep++;
         updateQuestion();
       } else {
-  // 1. Очищаем ответы
-  answersContainer.innerHTML = '';
-
-  // 2. Скрываем введение и индикатор этапов
+  // Скрываем старые блоки
   intro.style.display = 'none';
   steps.style.display = 'none';
+  answersContainer.innerHTML = '';
 
-  // 3. Показываем сообщение с благодарностью
+  const isMobile = window.innerWidth <= 768;
+  if (isMobile) {
+    document.body.style.backgroundImage = "url('font/img/background_thankyou.svg')";
+    document.body.style.backgroundSize = "cover";
+    document.body.style.backgroundPosition = "center center";
+  }
+
+  // Добавляем класс, чтобы изменить поведение
+  document.body.classList.add('final');
+
+  // Показываем сообщение
   questionText.innerHTML = `
     <div class="thank-you-message">
-        <h1 class="message-heading">Спасибо за <span class="message-span">ответы!</span></h1>
-        <p class="message-text">Мы ценим ваше мнение и благодарим за уделенное время.
-      Ваши ответы помогают нам становиться лучше.</p>
+      <h1 class="message-heading">Спасибо за <span class="message-span">ответы!</span></h1>
+      <p class="message-text">
+        Мы ценим ваше мнение и благодарим за уделенное время.<br>
+        Ваши ответы помогают нам становиться лучше.
+      </p>
     </div>
   `;
 }
