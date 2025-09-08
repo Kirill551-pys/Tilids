@@ -9,17 +9,15 @@
 }
 body {
   width: 100%;
-  min-height: 100vh;
   color: #ffffff;
   background: #000;
   overflow-x: hidden;
   font-family: 'Montserrat';
     background-image: url('font/img/background_image.svg');
   background-repeat: no-repeat;
-  background-position: center top; /* 🔑 Прижимаем к верху */
-  background-size: auto;        /* Не обрезаем, масштабируем пропорционально */
-  background-color: #000;          /* Цвет фона на случай, если есть пустоты */
-  background-origin: content-box;
+  background-position: center top; 
+  background-size: auto;       
+  background-color: #000;          
   min-height: 100vh;
 }
 
@@ -27,11 +25,8 @@ body {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-
-
 }
 
-/* Шапка */
 .header {
   position: fixed;
   left: 0;
@@ -77,10 +72,8 @@ body {
 
 .container {
   width: 100%;
-  min-height: 100vh;
   display: flex;
   align-items: center;
-  padding-bottom: 5%;
 }
 
 .container-block {
@@ -103,14 +96,14 @@ body {
 .intro h1 {
  font-family: 'Montserrat';
  font-weight: 900;
- font-size: clamp(2rem, 2.5rem, 2.875rem);
+ font-size: clamp(2rem, 4vw, 2.875rem);
  line-height: 1.2;
  text-transform: uppercase;
  text-align: left;
 }
 
 .span-text {
-  font-size: clamp(2rem, 2.5rem, 5rem);
+  font-size: clamp(2rem, 4vw, 5rem);
 }
 
 .intro p {
@@ -260,7 +253,7 @@ body {
 }
 
 @media (max-width: 1024px) {
-    .container {
+  .container {
     min-height: auto;
     align-items: flex-start;
     padding-top: 20px;
@@ -270,7 +263,7 @@ body {
 
 @media (max-width: 769px) {
 
-    body {
+  body {
     background-size: contain;
     background-image: url(font/img/Group\ 1.svg);
     background-position: 1% 7%;
@@ -289,6 +282,8 @@ body {
     max-width: 100vw;
     justify-content: center;
     align-items: center;
+    padding-left: 0;
+
   }
 
   .intro {
