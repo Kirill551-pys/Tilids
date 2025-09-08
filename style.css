@@ -14,7 +14,7 @@ body {
   background: #000;
   overflow-x: hidden;
   font-family: 'Montserrat';
-    background-image: url('/font/img/background_image.svg');
+    background-image: url('font/img/background_image.svg');
   background-repeat: no-repeat;
   background-position: center top; /* 🔑 Прижимаем к верху */
   background-size: auto;        /* Не обрезаем, масштабируем пропорционально */
