@@ -258,13 +258,10 @@ body.final .container {
   padding-top: 120px; /* или больше, если нужно */
 }
 
-body.final .container {
-  height: 728px;
-}
+
 
 @media (max-width: 1024px) {
   .container {
-    min-height: auto;
     align-items: flex-start;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -288,7 +285,7 @@ body.final .container {
   }
 
   .container-block {
-    padding-top: 79%;
+    padding-top: 78%;
     max-width: 100vw;
     justify-content: center;
     align-items: center;
@@ -349,4 +346,8 @@ body.final .container {
     max-width: 335px;
   }
   
+
+  .container-block.thank-you-message {
+    padding-top: 10px;
+  }
 }

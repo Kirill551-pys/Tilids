@@ -50,8 +50,8 @@ function updateQuestion() {
   const isMobile = window.innerWidth <= 768;
   if (isMobile) {
     document.body.style.backgroundImage = "url('font/img/background_thankyou.svg')";
-    document.body.style.backgroundSize = "cover";
-    document.body.style.backgroundPosition = "center center";
+    document.body.style.backgroundSize = "contain";
+    document.body.style.backgroundPosition = "1% 15%";
   }
 
   // Добавляем класс, чтобы изменить поведение
